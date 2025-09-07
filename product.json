@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "title": "Modern Family Home",
+    "price": 465000,
+    "image": "images/Modern Family Home.jpg"
+  },
+  {
+    "id": 2,
+    "title": "Contemporary Apartment",
+    "price": 685000,
+    "image": "images/Contemporary Apartment.jpg"
+  },
+  {
+    "id": 3,
+    "title": "Semi-Detached Home",
+    "price": 325000,
+    "image": "images/Semi-Detached Home.jpg"
+  },
+  {
+    "id": 4,
+    "title": "Luxury Penthouse",
+    "price": 799000,
+    "image": "images/Luxury Penthouse.jpg"
+  },
+  {
+    "id": 5,
+    "title": "City Apartment (Rent)",
+    "price": 2100,
+    "image": "images/City Apartment.jpg"
+  },
+  {
+    "id": 6,
+    "title": "Student Flat (Rent)",
+    "price": 1250,
+    "image": "images/Student Flat.jpg"
+  },
+  {
+    "id": 7,
+    "title": "Cozy Cottage (Rent)",
+    "price": 950,
+    "image": "images/Cozy Cottage.jpg"
+  },
+  {
+    "id": 8,
+    "title": "Family House (Rent)",
+    "price": 1650,
+    "image": "images/img_8.jpg"
+  },
+  {
+    "id": 9,
+    "title": "Modern Loft (Rent)",
+    "price": 1050,
+    "image": "images/Modern Loft.jpg"
+  },
+  {
+    "id": 10,
+    "title": "Suburban Flat (Rent)",
+    "price": 500,
+    "image": "images/Suburban Flat.jpg"
+  }
+]

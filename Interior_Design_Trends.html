@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="author" content="Untree.co" />
+  <link rel="shortcut icon" href="favicon.png" />
+
+  <meta name="description" content="" />
+  <meta name="keywords" content="bootstrap, bootstrap5" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="fonts/icomoon/style.css" />
+  <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css" />
+
+  <link rel="stylesheet" href="css/tiny-slider.css" />
+  <link rel="stylesheet" href="css/aos.css" />
+  <link rel="stylesheet" href="css/style.css" />
+
+  <title>
+Interior Design Trends
+  </title>
+  <Style>
+     .container1 {
+      max-width: 900px;
+      margin: 40px auto;
+      background: #fff;
+      padding: 40px 30px;
+      border-radius: 12px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 28px;
+      margin-bottom: 10px;
+      color: #5A67D8;
+    }
+
+    .date {
+      text-align: center;
+      font-size: 14px;
+      color: #718096;
+      margin-bottom: 30px;
+    }
+
+    h2 {
+      font-size: 20px;
+      margin-top: 25px;
+      color: #2d3748;
+      border-left: 4px solid #5A67D8;
+      padding-left: 10px;
+    }
+
+    p, li {
+      font-size: 16px;
+      margin-bottom: 15px;
+    }
+
+    ul {
+      margin-left: 20px;
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      .container {
+        padding: 25px 20px;
+        margin: 20px;
+      }
+      h1 {
+        font-size: 22px;
+      }
+      h2 {
+        font-size: 18px;
+      }
+      p, li {
+        font-size: 15px;
+      }
+    }
+        .blog-header {
+      margin-bottom: 2rem;
+    }
+    .blog-content img {
+      max-width: 100%;
+      border-radius: 8px;
+      margin: 1.5rem 0;
+    }
+    .blog-content h2, .blog-content h3 {
+      margin-top: 1.5rem;
+    }
+.interior-design {
+  background: #f8f9fb;
+  padding: 60px 20px;
+  font-family: "Poppins", sans-serif;
+  color: #1a202c;
+}
+.interior-design .container {
+  max-width: 900px;
+  margin: auto;
+}
+.section-title {
+  font-size: 2.2rem;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #5a67d8;
+  position: relative;
+}
+.section-title::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #b794f4;
+  margin: 10px auto 0;
+  border-radius: 3px;
+  animation: glow 2s infinite alternate;
+}
+.intro {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 1.1rem;
+}
+.trend {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.trend:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgba(90,103,216,0.2);
+}
+.trend h3 {
+  font-size: 1.4rem;
+  color: #5a67d8;
+  margin-bottom: 10px;
+}
+.trend p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+.final {
+  text-align: center;
+  margin-top: 40px;
+}
+.final h3 {
+  font-size: 1.6rem;
+  color: #5a67d8;
+}
+.btn-cta {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 12px 24px;
+  background: #5a67d8;
+  color: #fff;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+.btn-cta:hover {
+  background: #b794f4;
+  box-shadow: 0 0 12px #b794f4;
+}
+@keyframes glow {
+  from { box-shadow: 0 0 5px #b794f4; }
+  to { box-shadow: 0 0 15px #5a67d8; }
+}
+  </Style>
+</head>
+
+<body>
+  <div class="site-mobile-menu site-navbar-target">
+    <div class="site-mobile-menu-header">
+      <div class="site-mobile-menu-close">
+        <span class="icofont-close js-menu-toggle"></span>
+      </div>
+    </div>
+    <div class="site-mobile-menu-body"></div>
+  </div>
+
+  <nav class="site-nav">
+    <div class="container">
+      <div class="menu-bg-wrap">
+        <div class="site-navigation">
+          <a href="index.html" class="logo m-0 float-start">FLOTEX</a>
+
+          <ul class="js-clone-nav d-none d-lg-inline-block text-start site-menu float-end">
+            <li class="active"><a href="index.html">Home</a></li>
+            <li class="has-children">
+              <a href="properties.html">Properties</a>
+              <ul class="dropdown">
+                <li><a href="buyproperites.html">Buy Property</a></li>
+                <li><a href="sellproperties.html">Sell Property</a></li>
+                <li><a href="rentproperties.html">Rent Property</a></li>
+                <!-- <li class="has-children">
+                    <a href="#">Dropdown</a>
+                    <ul class="dropdown">
+                      <li><a href="#">Sub Menu One</a></li>
+                      <li><a href="#">Sub Menu Two</a></li>
+                      <li><a href="#">Sub Menu Three</a></li>
+                    </ul>
+                  </li> -->
+              </ul>
+            </li>
+            <li><a href="services.html">All Services</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="blogs.html">Blogs</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+
+          <a href="#"
+            class="burger light me-auto float-end mt-1 site-menu-toggle js-menu-toggle d-inline-block d-lg-none"
+            data-toggle="collapse" data-target="#main-navbar">
+            <span></span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div
+      class="hero page-inner overlay"
+      style="background-image: url('images/hero_bg_1.jpg')"
+    >
+      <div class="container">
+        <div class="row justify-content-center align-items-center">
+          <div class="col-lg-9 text-center mt-5">
+            <h1 class="heading" data-aos="fade-up">Interior Design Trends</h1>
+
+            <nav
+              aria-label="breadcrumb"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <ol class="breadcrumb text-center justify-content-center">
+                <li class="breadcrumb-item"><a href="blogs.html">Blogs</a></li>
+                <li
+                  class="breadcrumb-item active text-white-50"
+                  aria-current="page"
+                >
+                 Interior Design Trends
+                </li>
+              </ol>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+
+     <div class="container py-5">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+
+        <!-- Blog Header -->
+        <div class="blog-header text-center">
+          <h1 class="mb-3">Interior Design Trends That Add Value to Your Home</h1>
+          <p class="text-muted">By Flotex Real Estate</p>
+        </div>
+
+        <!-- Blog Content -->
+        <div class="blog-content">
+
+          <!-- Image placeholder -->
+          <img src="images/women-collaborating-office.jpg" alt="Selling Property" class="img-fluid">
+
+       <p class="intro">
+      At <strong>Flotex</strong>, we believe interior design is more than just decorating a space—it’s about creating homes that feel inviting, functional, and timeless. 
+      Smart design choices not only improve daily living but can also increase the long-term value of your property.
+    </p>
+
+    <div class="trend">
+      <h3>1. Open-Plan Living Spaces</h3>
+      <p>Modern buyers love <strong>open layouts</strong> that connect the kitchen, dining, and living areas. By removing unnecessary walls, homes feel brighter, larger, and more practical for family life or entertaining.</p>
+    </div>
+
+    <div class="trend">
+      <h3>2. Neutral Palettes with Bold Accents</h3>
+      <p><strong>Neutral colours</strong> like soft greys, whites, and beiges create calm, spacious interiors. Add bold accents—such as a navy feature wall or statement furniture—for personality without overwhelming the space.</p>
+    </div>
+
+    <div class="trend">
+      <h3>3. Sustainable & Natural Materials</h3>
+      <p>Buyers are drawn to <strong>sustainable choices</strong> such as reclaimed wood, bamboo flooring, and natural stone. These materials add warmth, durability, and eco-friendly appeal.</p>
+    </div>
+
+    <div class="trend">
+      <h3>4. Smart Storage Solutions</h3>
+      <p>Features like <strong>built-in wardrobes, under-stair storage, and multi-purpose furniture</strong> keep homes clutter-free while maximising style and functionality.</p>
+    </div>
+
+    <div class="trend">
+      <h3>5. Home Office Spaces</h3>
+      <p>Remote work is here to stay. A <strong>dedicated workspace</strong>—whether a full office, loft conversion, or desk nook—instantly boosts property appeal.</p>
+    </div>
+
+    <div class="trend">
+      <h3>6. Energy Efficiency & Smart Tech</h3>
+      <p>Upgrades like <strong>LED lighting, efficient heating, and smart thermostats</strong> save money and attract eco-conscious buyers. Integrated smart tech adds a modern “wow factor.”</p>
+    </div>
+
+    <div class="trend">
+      <h3>7. Kitchens & Bathrooms as Key Investments</h3>
+      <p><strong>Kitchens and bathrooms sell homes</strong>. Sleek finishes, smart layouts, and stylish fixtures deliver high returns, even with small upgrades like new taps or lighting.</p>
+    </div>
+
+    <div class="final">
+      <h3>Final Thoughts</h3>
+      <p>Interior design isn’t just about looks—it’s a smart investment. At <strong>Flotex</strong>, our team specialises in creating stylish, functional, and value-boosting spaces.</p>
+      <a href="contact.html" class="btn-cta">Contact Flotex Today</a>
+    </div>
+  </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="site-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="widget">
+            <h3>Contact</h3>
+            <address>32 BRANDISH CRESCENT, NOTTINGHAM,
+MIDLANDS, NG11 9JX</address>
+            <ul class="list-unstyled links">
+              <li><a href="tel://11234567890">+44 7853 867603</a></li>
+              <!-- <li><a href="tel://11234567890">+1(123)-456-7890</a></li> -->
+              <li>
+                <a href="info.foltex@gmail.com">info.foltex@gmail.com</a>
+              </li>
+            </ul>
+          </div>
+          <!-- /.widget -->
+        </div>
+        <!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <div class="widget">
+            <h3>Sources</h3>
+            <ul class="list-unstyled float-start links">
+              <li><a href="FAQs.html">FAQs</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="Terms&condition.html">Terms & Conditions</a></li>
+              <li><a href="PrivacyPolicy.html">Privacy Policy</a></li>
+            </ul>
+           <ul class="list-unstyled float-start links">
+              <li><a href="blogs.html">Blogs</a></li>
+              <li><a href="rentproperties.html">Rent A Property</a></li>
+              <li><a href="buyproperites.html">Buy A Property</a></li>
+              <li><a href="sellproperties.html">Sell A Property</a></li>
+
+            </ul> 
+          </div>
+          <!-- /.widget -->
+        </div>
+        <!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <div class="widget">
+            <h3>Links</h3>
+            <ul class="list-unstyled links">
+              <!-- <li><a href="#">Our Vision</a></li> -->
+              <li><a href="about.html">About us</a></li>
+              <li><a href="contact.html">Contact us</a></li>
+            </ul>
+
+            <ul class="list-unstyled social">
+              <li>
+                <a href="#"><span class="icon-instagram"></span></a>
+              </li>
+              <li>
+                <a href="#"><span class="icon-twitter"></span></a>
+              </li>
+              <li>
+                <a href="#"><span class="icon-facebook"></span></a>
+              </li>
+              <li>
+                <a href="#"><span class="icon-linkedin"></span></a>
+              </li>
+              <li>
+                <a href="#"><span class="icon-pinterest"></span></a>
+              </li>
+              <li>
+                <a href="#"><span class="icon-dribbble"></span></a>
+              </li>
+            </ul>
+          </div>
+          <!-- /.widget -->
+        </div>
+        <!-- /.col-lg-4 -->
+      </div>
+      <!-- /.row -->
+
+      
+    </div>
+    <!-- /.container -->
+  </div>
+  <!-- /.site-footer -->
+
+  <!-- Preloader -->
+  <div id="overlayer"></div>
+  <div class="loader">
+    <div class="spinner-border" role="status">
+      <span class="visually-hidden">Loading...</span>
+    </div>
+  </div>
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/tiny-slider.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/navbar.js"></script>
+  <script src="js/counter.js"></script>
+  <script src="js/custom.js"></script>
+</body>
+
+</html>

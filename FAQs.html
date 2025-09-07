@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="author" content="Untree.co" />
+  <link rel="shortcut icon" href="favicon.png" />
+
+  <meta name="description" content="" />
+  <meta name="keywords" content="bootstrap, bootstrap5" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="fonts/icomoon/style.css" />
+  <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css" />
+
+  <link rel="stylesheet" href="css/tiny-slider.css" />
+  <link rel="stylesheet" href="css/aos.css" />
+  <link rel="stylesheet" href="css/style.css" />
+
+  <title>
+    FAQs
+  </title>
+<style>
+   .faq-section {
+      max-width: 900px;
+      margin: 60px auto;
+      padding: 20px;
+    }
+
+    .faq-title {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .faq-title h2 {
+      font-size: 2.2rem;
+      color: #5A67D8;
+    }
+
+    .faq-item {
+      background: #fff;
+      border-radius: 12px;
+      margin-bottom: 15px;
+      padding: 20px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      transition: all 0.3s ease;
+    }
+
+    .faq-item.active {
+      background: #f0f4ff;
+      box-shadow: 0 6px 18px rgba(90,103,216,0.2);
+    }
+
+    .faq-question {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      cursor: pointer;
+      font-weight: 600;
+      font-size: 1.1rem;
+    }
+
+    .faq-question span {
+      transition: transform 0.3s ease;
+    }
+
+    .faq-item.active .faq-question span {
+      transform: rotate(45deg);
+    }
+
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      opacity: 0;
+      transition: all 0.4s ease;
+      line-height: 1.6;
+      margin-top: 10px;
+    }
+
+    .faq-item.active .faq-answer {
+      max-height: 400px;
+      opacity: 1;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .faq-title h2 {
+        font-size: 1.8rem;
+      }
+      .faq-question {
+        font-size: 1rem;
+      }
+    }
+  
+  </style>
+</head>
+
+<body>
+
+   
+
+
+  <div class="site-mobile-menu site-navbar-target">
+    <div class="site-mobile-menu-header">
+      <div class="site-mobile-menu-close">
+        <span class="icofont-close js-menu-toggle"></span>
+      </div>
+    </div>
+    <div class="site-mobile-menu-body"></div>
+  </div>
+
+  <nav class="site-nav">
+    <div class="container">
+      <div class="menu-bg-wrap">
+        <div class="site-navigation">
+          <a href="index.html" class="logo m-0 float-start">FLOTEX</a>
+
+          <ul class="js-clone-nav d-none d-lg-inline-block text-start site-menu float-end">
+            <li class="active"><a href="index.html">Home</a></li>
+            <li class="has-children">
+              <a href="properties.html">Properties</a>
+              <ul class="dropdown">
+                <li><a href="buyproperites.html">Buy Property</a></li>
+                <li><a href="sellproperties.html">Sell Property</a></li>
+                <li><a href="rentproperties.html">Rent Property</a></li>
+                <!-- <li class="has-children">
+                    <a href="#">Dropdown</a>
+                    <ul class="dropdown">
+                      <li><a href="#">Sub Menu One</a></li>
+                      <li><a href="#">Sub Menu Two</a></li>
+                      <li><a href="#">Sub Menu Three</a></li>
+                    </ul>
+                  </li> -->
+              </ul>
+            </li>
+            <li><a href="services.html">All Services</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="blogs.html">Blogs</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+
+          <a href="#"
+            class="burger light me-auto float-end mt-1 site-menu-toggle js-menu-toggle d-inline-block d-lg-none"
+            data-toggle="collapse" data-target="#main-navbar">
+            <span></span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+	<!-- Start Hero Section -->
+	<div
+      class="hero page-inner overlay"
+      style="background-image: url('images/hero_bg_1.jpg')"
+    >
+      <div class="container">
+        <div class="row justify-content-center align-items-center">
+          <div class="col-lg-9 text-center mt-5">
+            <h1 class="heading" data-aos="fade-up">FAQs</h1>
+
+            <nav
+              aria-label="breadcrumb"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <ol class="breadcrumb text-center justify-content-center">
+                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                <li
+                  class="breadcrumb-item active text-white-50"
+                  aria-current="page"
+                >
+                  FAQs
+                </li>
+              </ol>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+	<!-- End Hero Section -->
+
+<section class="faq-section">
+    <div class="faq-title">
+      <h2>Frequently Asked Questions</h2>
+      <p>Your top questions about Flotex, answered.</p>
+    </div>
+
+    <!-- FAQ Items -->
+    <div class="faq-item">
+      <div class="faq-question">
+        <p>What services does Flotex provide?</p>
+        <span>+</span>
+      </div>
+      <div class="faq-answer">
+        Flotex offers a full range of real estate and property solutions, including: 
+        Property Management, Buy & Sell, Rentals, Interior Design, and Construction Services.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">
+        <p>How does Flotex help me sell my property?</p>
+        <span>+</span>
+      </div>
+      <div class="faq-answer">
+        We handle the entire sales process from valuation and marketing to negotiations and contracts. 
+        Our goal is to get you the best possible price quickly and stress-free.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">
+        <p>I want to rent out my property. Can Flotex manage it for me?</p>
+        <span>+</span>
+      </div>
+      <div class="faq-answer">
+        Yes! We help landlords by marketing the property, finding reliable tenants, managing contracts, 
+        rent collection, and providing full property management for a hands-off experience.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">
+        <p>Do you only deal with residential properties?</p>
+        <span>+</span>
+      </div>
+      <div class="faq-answer">
+        No, we cover both residential and commercial properties. Whether it’s a family home, office, 
+        or retail space, Flotex has the expertise to manage, sell, rent, or design it.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">
+        <p>How does your property management service save me time?</p>
+        <span>+</span>
+      </div>
+      <div class="faq-answer">
+        We take care of everything – tenant communication, rent collection, maintenance, and inspections – 
+        so you don’t have to. You’ll save time, avoid stress, and enjoy steady returns.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">
+        <p>Do you provide valuations before selling or renting?</p>
+        <span>+</span>
+      </div>
+      <div class="faq-answer">
+        Yes. Our experts provide accurate, market-based valuations so you know the true worth 
+        of your property before making decisions.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">
+        <p>What areas do you cover?</p>
+        <span>+</span>
+      </div>
+      <div class="faq-answer">
+        Flotex operates across the UK market, with a strong focus on major cities such as 
+        London, Manchester, Birmingham, Leeds, and surrounding regions.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">
+        <p>How do I start working with Flotex?</p>
+        <span>+</span>
+      </div>
+      <div class="faq-answer">
+        Simply contact us through our website, email, or phone. We’ll schedule a free consultation 
+        to understand your goals and guide you through the next steps.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">
+        <p>Do you help first-time buyers or tenants?</p>
+        <span>+</span>
+      </div>
+      <div class="faq-answer">
+        Absolutely. We specialize in making the process clear and stress-free for first-time 
+        buyers and renters. Our team guides you step-by-step, from viewing properties to signing contracts.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">
+        <p>Why should I choose Flotex?</p>
+        <span>+</span>
+      </div>
+      <div class="faq-answer">
+        Flotex combines transparency, expertise, a client-first approach, and full-service support – 
+        everything from management to interiors under one trusted brand.
+      </div>
+    </div>
+
+  </section>
+
+	
+
+
+
+
+	<div class="site-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="widget">
+            <h3>Contact</h3>
+            <address>32 BRANDISH CRESCENT, NOTTINGHAM,
+MIDLANDS, NG11 9JX</address>
+            <ul class="list-unstyled links">
+              <li><a href="tel://11234567890">+44 7853 867603</a></li>
+              <!-- <li><a href="tel://11234567890">+1(123)-456-7890</a></li> -->
+              <li>
+                <a href="info.foltex@gmail.com">info.foltex@gmail.com</a>
+              </li>
+            </ul>
+          </div>
+          <!-- /.widget -->
+        </div>
+        <!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <div class="widget">
+            <h3>Sources</h3>
+            <ul class="list-unstyled float-start links">
+              <li><a href="FAQs.html">FAQs</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="Terms&condition.html">Terms & Conditions</a></li>
+              <li><a href="PrivacyPolicy.html">Privacy Policy</a></li>
+            </ul>
+           <ul class="list-unstyled float-start links">
+              <li><a href="blogs.html">Blogs</a></li>
+              <li><a href="rentproperties.html">Rent A Property</a></li>
+              <li><a href="buyproperites.html">Buy A Property</a></li>
+              <li><a href="sellproperties.html">Sell A Property</a></li>
+
+            </ul> 
+          </div>
+          <!-- /.widget -->
+        </div>
+        <!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <div class="widget">
+            <h3>Links</h3>
+            <ul class="list-unstyled links">
+              <!-- <li><a href="#">Our Vision</a></li> -->
+              <li><a href="about.html">About us</a></li>
+              <li><a href="contact.html">Contact us</a></li>
+            </ul>
+
+            <ul class="list-unstyled social">
+              <li>
+                <a href="#"><span class="icon-instagram"></span></a>
+              </li>
+              <li>
+                <a href="#"><span class="icon-twitter"></span></a>
+              </li>
+              <li>
+                <a href="#"><span class="icon-facebook"></span></a>
+              </li>
+              <li>
+                <a href="#"><span class="icon-linkedin"></span></a>
+              </li>
+              <li>
+                <a href="#"><span class="icon-pinterest"></span></a>
+              </li>
+              <li>
+                <a href="#"><span class="icon-dribbble"></span></a>
+              </li>
+            </ul>
+          </div>
+          <!-- /.widget -->
+        </div>
+        <!-- /.col-lg-4 -->
+      </div>
+      <!-- /.row -->
+
+      
+    </div>
+    <!-- /.container -->
+  </div>
+  <!-- /.site-footer -->
+
+  </div>
+</div>
+  <script>
+    const faqItems = document.querySelectorAll('.faq-item');
+
+    faqItems.forEach(item => {
+      const question = item.querySelector('.faq-question');
+      question.addEventListener('click', () => {
+        item.classList.toggle('active');
+      });
+    });
+  </script>
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/tiny-slider.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/navbar.js"></script>
+  <script src="js/counter.js"></script>
+  <script src="js/custom.js"></script>
+</body>
+
+</html>

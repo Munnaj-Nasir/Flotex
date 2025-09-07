@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Untree.co" />
+    <link rel="shortcut icon" href="favicon.png" />
+
+    <meta name="description" content="" />
+    <meta name="keywords" content="bootstrap, bootstrap5" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap"
+        rel="stylesheet" />
+
+    <link rel="stylesheet" href="fonts/icomoon/style.css" />
+    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css" />
+
+    <link rel="stylesheet" href="css/tiny-slider.css" />
+    <link rel="stylesheet" href="css/aos.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>Your Cart</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f8f9fa;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .cart-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .cart-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 1px solid #ddd;
+            padding: 10px 0;
+        }
+
+        .cart-item img {
+            width: 80px;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        .cart-info {
+            flex: 1;
+            margin-left: 15px;
+        }
+
+        .cart-info h3 {
+            margin: 0;
+            font-size: 18px;
+        }
+
+        .cart-info p {
+            margin: 5px 0;
+            color: #666;
+        }
+
+        .remove-btn {
+            background: #e63946;
+            color: white;
+            border: none;
+            padding: 8px 12px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .remove-btn:hover {
+            background: #c92a37;
+        }
+
+        .cart-total {
+            text-align: right;
+            font-size: 20px;
+            margin-top: 20px;
+        }
+
+        .btn-checkout {
+            background-color: black;
+            color: white;
+            width: 200px;
+            border-radius: 25px;
+            padding: 5px;
+        }
+
+        .btn-checkout:hover {
+            background-color: white;
+            color: black;
+            width: 220px;
+            padding: 10px;
+            animation: forwards;
+        }
+
+        .cart-totals {
+            margin-top: 50px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Start Header/Navigation -->
+    <div class="site-mobile-menu site-navbar-target">
+        <div class="site-mobile-menu-header">
+            <div class="site-mobile-menu-close">
+                <span class="icofont-close js-menu-toggle"></span>
+            </div>
+        </div>
+        <div class="site-mobile-menu-body"></div>
+    </div>
+
+    <nav class="site-nav">
+        <div class="container">
+            <div class="menu-bg-wrap">
+                <div class="site-navigation">
+                    <a href="index.html" class="logo m-0 float-start">FLOTEX</a>
+
+                    <ul class="js-clone-nav d-none d-lg-inline-block text-start site-menu float-end">
+                        <li class="active"><a href="index.html">Home</a></li>
+                        <li class="has-children">
+                            <a href="properties.html">Properties</a>
+                            <ul class="dropdown">
+                                <li><a href="buyproperites.html">Buy Property</a></li>
+                                <li><a href="sellproperties.html">Sell Property</a></li>
+                                <li><a href="rentproperties.html">Rent Property</a></li>
+                                <!-- <li class="has-children">
+                    <a href="#">Dropdown</a>
+                    <ul class="dropdown">
+                      <li><a href="#">Sub Menu One</a></li>
+                      <li><a href="#">Sub Menu Two</a></li>
+                      <li><a href="#">Sub Menu Three</a></li>
+                    </ul>
+                  </li> -->
+                            </ul>
+                        </li>
+                        <li><a href="services.html">All Services</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="blogs.html">Blogs</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+
+                    <a href="#"
+                        class="burger light me-auto float-end mt-1 site-menu-toggle js-menu-toggle d-inline-block d-lg-none"
+                        data-toggle="collapse" data-target="#main-navbar">
+                        <span></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- End Header/Navigation -->
+
+
+    <!-- Start Hero Section -->
+    <div class="small-hero" style="margin-bottom: 250px;">
+        <h1></h1>
+    </div>
+    <!-- End Hero Section -->
+
+    <div class="cart-container" id="cart-container"></div>
+
+    <div class="cart-totals">
+        <h4>Cart Totals</h4>
+        <div class="d-flex justify-content-between sub-width">
+            <span>Subtotal:</span>
+            <span id="cart-subtotal">£0.00</span>
+        </div>
+        <div class="mt-3">
+            <button class="btn-checkout" onclick="proceedToCheckout()">Pay your Deposit</button>
+        </div>
+    </div>
+    <div class="site-footer" style="margin-top: 100px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="widget">
+                        <h3>Contact</h3>
+                        <address>32 BRANDISH CRESCENT, NOTTINGHAM,
+                            MIDLANDS, NG11 9JX</address>
+                        <ul class="list-unstyled links">
+                            <li><a href="tel://11234567890">+44 7853 867603</a></li>
+                            <!-- <li><a href="tel://11234567890">+1(123)-456-7890</a></li> -->
+                            <li>
+                                <a href="info.foltex@gmail.com">info.foltex@gmail.com</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- /.widget -->
+                </div>
+                <!-- /.col-lg-4 -->
+                <div class="col-lg-4">
+                    <div class="widget">
+                        <h3>Sources</h3>
+                        <ul class="list-unstyled float-start links">
+                            <li><a href="FAQs.html">FAQs</a></li>
+                            <li><a href="services.html">Services</a></li>
+                            <li><a href="Terms&condition.html">Terms & Conditions</a></li>
+                            <li><a href="PrivacyPolicy.html">Privacy Policy</a></li>
+                        </ul>
+                        <ul class="list-unstyled float-start links">
+                            <li><a href="blogs.html">Blogs</a></li>
+                            <li><a href="rentproperties.html">Rent A Property</a></li>
+                            <li><a href="buyproperites.html">Buy A Property</a></li>
+                            <li><a href="sellproperties.html">Sell A Property</a></li>
+
+                        </ul>
+                    </div>
+                    <!-- /.widget -->
+                </div>
+                <!-- /.col-lg-4 -->
+                <div class="col-lg-4">
+                    <div class="widget">
+                        <h3>Links</h3>
+                        <ul class="list-unstyled links">
+                            <!-- <li><a href="#">Our Vision</a></li> -->
+                            <li><a href="about.html">About us</a></li>
+                            <li><a href="contact.html">Contact us</a></li>
+                        </ul>
+
+                        <ul class="list-unstyled social">
+                            <li>
+                                <a href="#"><span class="icon-instagram"></span></a>
+                            </li>
+                            <li>
+                                <a href="#"><span class="icon-twitter"></span></a>
+                            </li>
+                            <li>
+                                <a href="#"><span class="icon-facebook"></span></a>
+                            </li>
+                            <li>
+                                <a href="#"><span class="icon-linkedin"></span></a>
+                            </li>
+                            <li>
+                                <a href="#"><span class="icon-pinterest"></span></a>
+                            </li>
+                            <li>
+                                <a href="#"><span class="icon-dribbble"></span></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- /.widget -->
+                </div>
+                <!-- /.col-lg-4 -->
+            </div>
+            <!-- /.row -->
+
+
+        </div>
+        <!-- /.container -->
+    </div>
+    <!-- /.site-footer -->
+
+    <script src="cart.js"></script>
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const container = document.getElementById('cart-container');
+            const subtotalEl = document.getElementById('cart-subtotal');
+            const gbp = new Intl.NumberFormat('en-GB', { style: 'currency', currency: 'GBP' });
+
+            function render() {
+                const cart = Cart.get();
+                container.innerHTML = '';
+
+                if (cart.length === 0) {
+                    container.innerHTML = '<p>Your cart is empty.</p>';
+                } else {
+                    cart.forEach(item => {
+                        const row = document.createElement('div');
+                        row.className = 'cart-item';
+                        row.innerHTML = `
+          <img src="${item.image}" alt="${escapeHtml(item.title)}">
+          <div class="cart-info">
+            <h3 style="margin:0;font-size:18px;">${escapeHtml(item.title)}</h3>
+            <p style="margin:5px 0;color:#666;">${gbp.format(item.price)} each</p>
+          </div>
+
+          <div class="qty-controls" data-id="${item.id}">
+            <button class="qty-btn minus" aria-label="Decrease quantity">−</button>
+            <input class="qty-input" type="number" min="0" step="1" value="${item.quantity}">
+            <button class="qty-btn plus" aria-label="Increase quantity">+</button>
+          </div>
+
+          <div class="line-total">${gbp.format(item.price * item.quantity)}</div>
+        `;
+                        container.appendChild(row);
+                    });
+                }
+
+                subtotalEl.textContent = gbp.format(Cart.subtotal());
+            }
+
+            // + / − buttons
+            container.addEventListener('click', (e) => {
+                const btn = e.target.closest('.qty-btn');
+                if (!btn) return;
+                const id = btn.parentElement.dataset.id;
+                if (btn.classList.contains('plus')) Cart.inc(id);
+                else Cart.dec(id);
+                render();
+            });
+
+            // Direct quantity entry
+            container.addEventListener('change', (e) => {
+                const input = e.target.closest('.qty-input');
+                if (!input) return;
+                const id = input.parentElement.dataset.id;
+                let qty = parseInt(input.value, 10);
+                if (isNaN(qty) || qty < 0) qty = 0;
+                Cart.setQty(id, qty);
+                render();
+            });
+
+            window.proceedToCheckout = function () {
+                const cart = Cart.get();
+                if (cart.length === 0) {
+                    alert('Your cart is empty!');
+                    return;
+                }
+                localStorage.setItem('checkoutCart', JSON.stringify(cart));
+                window.location.href = 'checkout.html';
+            };
+
+            function escapeHtml(s) {
+                return s.replace(/[&<>"']/g, m => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#039;' }[m]));
+            }
+
+            render();
+        });
+    </script>
+
+</body>
+
+</html>

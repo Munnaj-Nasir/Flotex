@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="author" content="Untree.co" />
+  <link rel="shortcut icon" href="favicon.png" />
+
+  <meta name="description" content="" />
+  <meta name="keywords" content="bootstrap, bootstrap5" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="fonts/icomoon/style.css" />
+  <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css" />
+
+  <link rel="stylesheet" href="css/tiny-slider.css" />
+  <link rel="stylesheet" href="css/aos.css" />
+  <link rel="stylesheet" href="css/style.css" />
+
+  <title>
+    Flotex Best Property Management In UK
+  </title>
+  <style>
+
+    form {
+      max-width: 600px;
+      margin: auto;
+      background: #fff;
+      padding: 25px;
+      border-radius: 8px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    }
+
+    label {
+      display: block;
+      margin: 15px 0 5px;
+      font-weight: bold;
+    }
+
+    input, select, textarea {
+      width: 100%;
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      margin-bottom: 15px;
+    }
+
+    .subtype-group {
+      display: none;
+    }
+
+    button {
+      background: #234B9B;
+      color: white;
+      padding: 12px;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      border: 1px solid #234B9B;
+      background-color: #fff;
+      color: #1C1B1B;
+    }
+
+    .success {
+      background: #e6ffe6;
+      padding: 15px;
+      margin-top: 20px;
+      border: 1px solid #b2ffb2;
+      border-radius: 5px;
+      color: green;
+    }
+
+  </style>
+</head>
+
+<body>
+  <div class="site-mobile-menu site-navbar-target">
+    <div class="site-mobile-menu-header">
+      <div class="site-mobile-menu-close">
+        <span class="icofont-close js-menu-toggle"></span>
+      </div>
+    </div>
+    <div class="site-mobile-menu-body"></div>
+  </div>
+
+  <nav class="site-nav">
+    <div class="container">
+      <div class="menu-bg-wrap">
+        <div class="site-navigation">
+          <a href="index.html" class="logo m-0 float-start">FLOTEX</a>
+
+          <ul class="js-clone-nav d-none d-lg-inline-block text-start site-menu float-end">
+            <li class="active"><a href="index.html">Home</a></li>
+            <li class="has-children">
+              <a href="properties.html">Properties</a>
+              <ul class="dropdown">
+                <li><a href="buyproperites.html">Buy Property</a></li>
+                <li><a href="sellproperties.html">Sell Property</a></li>
+                <li><a href="rentproperties.html">Rent Property</a></li>
+                <!-- <li class="has-children">
+                    <a href="#">Dropdown</a>
+                    <ul class="dropdown">
+                      <li><a href="#">Sub Menu One</a></li>
+                      <li><a href="#">Sub Menu Two</a></li>
+                      <li><a href="#">Sub Menu Three</a></li>
+                    </ul>
+                  </li> -->
+              </ul>
+            </li>
+            <li><a href="services.html">All Services</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="blogs.html">Blogs</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+
+          <a href="#"
+            class="burger light me-auto float-end mt-1 site-menu-toggle js-menu-toggle d-inline-block d-lg-none"
+            data-toggle="collapse" data-target="#main-navbar">
+            <span></span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+    
+
+  <h1 style="color: #234B9B; margin-top: 200px; margin-bottom: 100px; text-align: center;" >Request a Quote</h1>
+ <form id="form" style="margin-bottom: 200px;">
+  <input type="text" name="name" placeholder="Name" required />
+  <input type="email" name="email" placeholder="Email" required />
+  <input type="text" name="phone" placeholder="Phone" required />
+
+  <!-- Service Dropdown -->
+  <select name="service" id="service" required>
+    <option value="">-- Select Service --</option>
+    <option value="Security guards (armed/unarmed)">Properties</option>
+    <option value="CCTV surveillance">Construction</option>
+    <option value="Access control systems (e.g., biometric/fingerprint)">Interior</option>
+    <option value="Patrolling (foot/mobile patrol)">Management</option>
+    <option value="Event security">Careers</option>
+    <!-- <option value="VIP/Executive protection">VIP/Executive protection</option>
+    <option value="Gate management">Gate management</option>
+    <option value="Dog squads/sniffer dogs">Dog squads/sniffer dogs</option> -->
+  </select>
+
+  <!-- Subtype Dropdown -->
+  <select name="subtype" id="subtype" required>
+    <option value="">-- Select Subtype --</option>
+  </select>
+
+  <textarea name="message" placeholder="Message"></textarea>
+  <button type="submit">Submit</button>
+</form>
+
+
+
+    <div class="success" id="successMsg" style="display: none;">
+    ✅ Your request has been submitted. We will contact you as soon as possible.
+  </div>
+
+  
+<div class="site-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="widget">
+            <h3>Contact</h3>
+            <address>32 BRANDISH CRESCENT, NOTTINGHAM,
+MIDLANDS, NG11 9JX</address>
+            <ul class="list-unstyled links">
+              <li><a href="tel://11234567890">+44 7853 867603</a></li>
+              <!-- <li><a href="tel://11234567890">+1(123)-456-7890</a></li> -->
+              <li>
+                <a href="info.foltex@gmail.com">info.foltex@gmail.com</a>
+              </li>
+            </ul>
+          </div>
+          <!-- /.widget -->
+        </div>
+        <!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <div class="widget">
+            <h3>Sources</h3>
+            <ul class="list-unstyled float-start links">
+              <li><a href="FAQs.html">FAQs</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="Terms&condition.html">Terms & Conditions</a></li>
+              <li><a href="PrivacyPolicy.html">Privacy Policy</a></li>
+            </ul>
+           <ul class="list-unstyled float-start links">
+              <li><a href="blogs.html">Blogs</a></li>
+              <li><a href="rentproperties.html">Rent A Property</a></li>
+              <li><a href="buyproperites.html">Buy A Property</a></li>
+              <li><a href="sellproperties.html">Sell A Property</a></li>
+
+            </ul> 
+          </div>
+          <!-- /.widget -->
+        </div>
+        <!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <div class="widget">
+            <h3>Links</h3>
+            <ul class="list-unstyled links">
+              <!-- <li><a href="#">Our Vision</a></li> -->
+              <li><a href="about.html">About us</a></li>
+              <li><a href="contact.html">Contact us</a></li>
+            </ul>
+
+            <ul class="list-unstyled social">
+              <li>
+                <a href="#"><span class="icon-instagram"></span></a>
+              </li>
+              <li>
+                <a href="#"><span class="icon-twitter"></span></a>
+              </li>
+              <li>
+                <a href="#"><span class="icon-facebook"></span></a>
+              </li>
+              <li>
+                <a href="#"><span class="icon-linkedin"></span></a>
+              </li>
+              <li>
+                <a href="#"><span class="icon-pinterest"></span></a>
+              </li>
+              <li>
+                <a href="#"><span class="icon-dribbble"></span></a>
+              </li>
+            </ul>
+          </div>
+          <!-- /.widget -->
+        </div>
+        <!-- /.col-lg-4 -->
+      </div>
+      <!-- /.row -->
+
+      
+    </div>
+    <!-- /.container -->
+  </div>
+  <!-- /.site-footer -->
+
+ <script>
+  const form = document.getElementById("form");
+  const serviceSelect = document.getElementById("service");
+  const subtypeSelect = document.getElementById("subtype");
+
+  const formURL = "https://script.google.com/macros/s/AKfycbyD9_kIWbPagtQJ14z0pJy0Vv9YxFPuDvLzidExRS7MHdtQuddHxvIYw3QDS5V01YUR/exec"; // Replace this
+
+  const subtypeOptions = {
+    "Security guards (armed/unarmed)": ["Rent", "Sell", "Purchase"],
+    "CCTV surveillance": ["Construction Service"],
+    "Access control systems (e.g., biometric/fingerprint)": ["Interior Designing"],
+    "Patrolling (foot/mobile patrol)": ["Property Management"],
+    "Event security": ["Concert", "Apply To Become An Agent"],
+    "VIP/Executive protection": ["Corporate", "Celebrity", "Political"],
+    "Gate management": ["Residential", "Commercial", "Industrial"],
+    "Dog squads/sniffer dogs": ["Explosives Detection", "Narcotics Detection", "Guard Dogs"]
+  };
+
+  serviceSelect.addEventListener("change", () => {
+    const selectedService = serviceSelect.value;
+    subtypeSelect.innerHTML = `<option value="">-- Select Subtype --</option>`; // Reset
+
+    if (subtypeOptions[selectedService]) {
+      subtypeOptions[selectedService].forEach(subtype => {
+        const option = document.createElement("option");
+        option.value = subtype;
+        option.textContent = subtype;
+        subtypeSelect.appendChild(option);
+      });
+    }
+  });
+
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    const data = {
+      name: form.name.value,
+      email: form.email.value,
+      phone: form.phone.value,
+      service: form.service.value,
+      subtype: form.subtype.value,
+      message: form.message.value
+    };
+
+    fetch(formURL, {
+      method: "POST",
+      mode: "no-cors",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify(data)
+    })
+      .then(() => {
+        alert("✅ Form submitted successfully!");
+        form.reset();
+        subtypeSelect.innerHTML = `<option value="">-- Select Subtype --</option>`;
+      })
+      .catch((err) => alert("❌ Error submitting form: " + err.message));
+  });
+</script>
+
+</body>
+</html>
